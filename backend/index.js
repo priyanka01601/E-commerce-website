@@ -21,8 +21,8 @@ app.use(morgan('dev'));
 app.use(cors());
 
 //  Daatabase connection with Mongodb
-// mongoose.connect("mongodb+srv://priyanka01kansal:p01601K@cluster0.oxvp0fl.mongodb.net/e-commerce");
-mongoose.connect("mongodb+srv://aryankaushal923:IUNHx3GBKH595EYj@cluster0.rlhddo5.mongodb.net/cutes-cosmetics")
+
+mongoose.connect("input your url")
 // API Creation
 
 
