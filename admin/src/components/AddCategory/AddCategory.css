@@ -1,0 +1,14 @@
+
+.addsubcategory-btn{
+    margin-top: 20px;
+    width:140px;
+    height:30px;
+    border-radius: 3px;
+    background: #bebea0;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size:14px;
+    font-weight:500;
+
+}

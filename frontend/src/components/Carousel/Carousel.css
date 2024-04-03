@@ -1,0 +1,89 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height:80vh;
+  /* max-width: 900px;  */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  
+
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Add this line to ensure the container takes the full width */
+  height: 100%;
+  transition: transform 0.5s ease; /* Move the transition property here */
+}
+
+.carousel-image {
+  height: auto;
+  height: 100%;
+  max-width:100%; /* Add this line to maintain the aspect ratio of the images */
+  object-fit: cover; /* Adjust object-fit property */
+  object-position: center center;
+  opacity: 0;
+  transition: opacity 1s ease; /* Move the transition property here */
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+
+.slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  background-color: #333;
+  color: #fff;
+}
+
+.slide:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+  
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.dot-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  @media(max-width:1000px){
+    .carousel-image{
+      object-fit: contain;
+    }
+  }
+ 

@@ -1,0 +1,9 @@
+.brands-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  

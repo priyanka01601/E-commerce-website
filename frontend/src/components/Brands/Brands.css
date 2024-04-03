@@ -1,0 +1,103 @@
+/* Brands.css */
+
+.brand-slider {
+    width: 95%;
+    margin: auto;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+
+  .products-banner{
+    width:95%;
+    margin: 20px 30px;
+    height: 80vh;
+    position: relative;
+  }
+  
+
+  .brand-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5) url('../Assets/salon-bg-brands.jpg') center/cover no-repeat;
+    background-color: #000;
+    z-index: -1; /* Send the background behind the content */
+  }
+  
+  .slider-container {
+    width: 100%;
+    position: relative; /* Set position to relative to contain child elements */
+    z-index: 1; /* Ensure the content is above the background */
+   
+
+    
+  }
+
+  .slider-container h1{
+    font-size: 4rem;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #222733;
+    margin-bottom: 20px;
+
+  }
+  
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 24px;
+    color: #222733;
+
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  
+  
+  .slick-prev {
+   left:-40px;
+    
+  }
+  .slick-dots{
+    color:white;
+    z-index: 2;
+  }
+  
+  .slick-next {
+    right:-15px;
+    
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #333;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  
+  .brands-img {
+    width:200px;
+    height: 200px;
+    z-index: 1;
+    margin-left:40px;
+  }
+  

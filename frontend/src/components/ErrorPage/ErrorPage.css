@@ -1,0 +1,39 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .error-container div {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    color: #ff6347; /* Tomato color for the 404 heading */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .home-button {
+    background-color: #222733; /* Green color for the home button */
+    color: #bebea0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color:black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: white; 
+    color:black;/* Darker green color on hover */
+  }
+  

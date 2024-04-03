@@ -1,0 +1,131 @@
+
+.menu-items {
+    display:inline-block;
+    list-style: none;
+}
+
+
+.nav-dropdown{
+    display:none;
+}
+
+
+
+.menu-items a{
+    cursor:pointer;
+    text-decoration: none;
+    color:#626262;
+    display: inline-block;
+    transition: all ease 0.3s;
+
+}
+
+.menu-items .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 20px 45px black;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.3s;
+    font-size: 18px;
+  }
+.menu-items:hover .dropdown{
+    z-index:1000;
+    opacity:1;
+    margin-top:5px;
+    pointer-events: auto;
+    
+}
+
+.menu-items:hover .dropdown,
+.menu-items .dropdown:hover {
+  z-index: 1000;
+  opacity: 1;
+  margin-top: 5px;
+  pointer-events: auto;
+}
+
+.menu-items .dropdown li{
+    
+    margin:0;
+    width:100%;
+    list-style-type: none;
+}
+
+.menu-items .dropdown li a{
+    padding:15px 20px;
+    display: inline-block;
+    align-items: center;
+    width:100%;
+}
+.menu-items a:hover{
+    color:Red;
+}
+
+@media(max-width: 1280px){
+    .nav-menu{
+        gap:30px;
+        font-size:16px;
+    }
+}
+
+@media(max-width:1024px){
+    .nav-menu{
+        gap:25px;
+        font-size:14px;
+    }
+}
+
+@media(max-width:800px){
+    .menu-items{
+        position:relative;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-dropdown{
+        display:inline-block;
+        cursor:pointer;
+        /* rotate:(-90deg); */
+        margin-left:20px;
+    }
+    
+
+    .dropdown {
+       display:none;
+       width:100%;
+        
+       
+      }
+    
+
+    .dropdown-visible{
+        display:flex;
+        /* transform: translateX(0); */
+        transition: none;
+        box-shadow: none;
+        max-height: 800px;
+        flex-direction: column;
+        
+    }
+   
+    
+      /* .menu-items .dropdown li a {
+        padding: 15px 20px;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+      } */
+
+    
+    .nav-dropdown.open{
+        transform:rotate(90deg);
+
+    }
+    
+
+}
+
